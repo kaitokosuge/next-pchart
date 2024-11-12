@@ -9,7 +9,7 @@ export default defineConfig({
     test: {
         environment: 'jsdom',
         coverage: {
-            reporter: ['text', 'json', 'html'],
+            reporter: ['text', 'json-summary', 'html'],
             provider: 'v8',
             exclude: [
                 '**/*.test.tsx',
@@ -19,6 +19,7 @@ export default defineConfig({
                 'tailwind.config.ts',
                 'vitest.config.ts',
             ],
+            reportOnFailure: true,
         },
     },
 });
