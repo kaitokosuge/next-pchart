@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 技術
 
-## Getting Started
+### 言語
 
-First, run the development server:
+・TypeScript | ver^5
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### フレームワーク
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+・Next.js | ver13 (app router)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### css
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+・Tailwind css | ver^3
 
-## Learn More
+### test
 
-To learn more about Next.js, take a look at the following resources:
+・vitest | ver^2.1.4
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### CI
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+・GitHub Actions
 
-## Deploy on Vercel
+### deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+・vercel
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Git
+
+### issue
+
+ある程度のまとまりを持たせて作成する
+
+### branch の作業粒度
+
+issue ごと
+
+### commit メッセージの prefix について　
+
+・add: コードの新規追加  
+・fix: 既存コードの編集削除
+
+### commit メッセージで留意する点
+
+ライブラリインストール時（npm i ~）は「〜インストール」と書くようにする（後で確認しやすいように）
+
+### pull request で留意する点
+
+コミットごとに何をしたのか簡潔に記載する。ただし冗長な場合は記載しない。UI 構築の際は画面動画も掲載
+
+## CI
+
+以下をプルリク時に確認する
+
+・テスト がパスしたか  
+・eslint がパスしたか  
+・prettier がパスしたか
